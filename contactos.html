@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — VoxRuta</title>
+<meta name="description" content="Escríbenos directo por WhatsApp para cotizar tu intercomunicador VoxRuta.">
+<link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+<canvas id="fondo-animado"></canvas>
+<div class="velo-fondo"></div>
+
+<header class="encabezado">
+  <div class="envoltura">
+    <a href="index.html" class="marca"><span class="punto"></span>VoxRuta</a>
+    <nav class="nav-principal" id="nav-principal">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="contactos.html" class="activo">Contacto</a>
+      <a href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" class="btn-wsp-nav" target="_blank" rel="noopener">Escríbenos</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="encabezado-pagina">
+    <div class="envoltura">
+      <div class="miga">Inicio <span class="ambar">/</span> Contacto</div>
+      <h1>Escríbenos</h1>
+      <p>Completa el formulario y se abrirá WhatsApp con tu mensaje listo para enviarnos directamente.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="envoltura">
+      <div class="grilla-contacto">
+
+        <div class="panel-contacto">
+          <h3>Cuéntanos qué necesitas</h3>
+          <form id="form-contacto" novalidate>
+
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Tu teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987 654 321">
+            </div>
+
+            <div class="campo">
+              <label for="modelo">Modelo de interés</label>
+              <select id="modelo" name="modelo">
+                <option value="Aún no lo sé, quiero que me asesoren">Aún no lo sé, quiero asesoría</option>
+                <option value="Y20 Max (S/ 80)">Y20 Max — S/ 80</option>
+                <option value="Y12 Pro (S/ 70)">Y12 Pro — S/ 70</option>
+                <option value="Y12 (S/ 50)">Y12 — S/ 50</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos para qué lo vas a usar, cuántas unidades necesitas, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn-comprar" style="width:100%">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+              Enviar por WhatsApp
+            </button>
+            <p id="aviso-form" style="font-size:13px;color:var(--gris-400);margin-top:12px;"></p>
+          </form>
+        </div>
+
+        <div class="panel-contacto">
+          <h3>Otras formas de contacto</h3>
+
+          <div class="dato-contacto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9" stroke-linecap="round"/><path d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Z"/></svg>
+            <div>
+              <div class="etiqueta">WhatsApp</div>
+              <div class="valor"><a href="https://wa.me/51930140078" target="_blank" rel="noopener">+51 930 140 078</a></div>
+            </div>
+          </div>
+
+          <div class="dato-contacto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="etiqueta">Zona de entrega</div>
+              <div class="valor">Callao, Perú</div>
+            </div>
+          </div>
+
+          <div class="dato-contacto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="etiqueta">Horario de atención</div>
+              <div class="valor">Respuesta por WhatsApp durante el día</div>
+            </div>
+          </div>
+
+          <p style="margin-top:24px; font-size:13.5px; color:var(--gris-400); line-height:1.6;">
+            La forma más rápida de recibir atención es escribiendo directo por WhatsApp usando el botón flotante o el formulario a la izquierda.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <div>
+      <div class="pie-marca">VoxRuta</div>
+      <p class="pie-copy">Intercomunicadores para casco de moto — Callao, Perú.</p>
+    </div>
+    <nav class="pie-links">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wsp-flotante" href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<style>
+  .campo{ margin-bottom:18px; }
+  .campo label{ display:block; font-size:13.5px; color:var(--gris-300); margin-bottom:7px; }
+  .campo input, .campo select, .campo textarea{
+    width:100%;
+    background:var(--asfalto-900);
+    border:1px solid var(--linea-500);
+    color:var(--crema-100);
+    padding:12px 14px;
+    border-radius:3px;
+    font-family:var(--fuente-texto);
+    font-size:14.5px;
+  }
+  .campo input:focus, .campo select:focus, .campo textarea:focus{
+    outline:none;
+    border-color:var(--onda-500);
+  }
+  .campo textarea{ resize:vertical; }
+</style>
+
+<script src="estilos/fondo.js"></script>
+<script>
+  const btnMenu = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-principal');
+  btnMenu.addEventListener('click', () => {
+    const abierto = nav.classList.toggle('abierto');
+    btnMenu.setAttribute('aria-expanded', abierto);
+  });
+
+  const NUMERO_WSP = '51930140078';
+  const formulario = document.getElementById('form-contacto');
+  const aviso = document.getElementById('aviso-form');
+
+  formulario.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombre').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const modelo = document.getElementById('modelo').value;
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    if (!nombre) {
+      aviso.textContent = 'Por favor escribe tu nombre antes de continuar.';
+      aviso.style.color = '#FF7A29';
+      return;
+    }
+
+    let texto = `Hola VoxRuta, mi nombre es ${nombre}.`;
+    texto += ` Modelo de interés: ${modelo}.`;
+    if (mensaje) texto += ` Mensaje: ${mensaje}.`;
+    if (telefono) texto += ` Mi teléfono de contacto: ${telefono}.`;
+
+    const url = `https://wa.me/${NUMERO_WSP}?text=${encodeURIComponent(texto)}`;
+    aviso.textContent = 'Abriendo WhatsApp...';
+    aviso.style.color = 'var(--gris-400)';
+    window.open(url, '_blank', 'noopener');
+  });
+</script>
+
+</body>
+</html>

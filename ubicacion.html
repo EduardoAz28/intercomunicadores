@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ubicación — VoxRuta</title>
+<meta name="description" content="Ubicación de VoxRuta en el Callao, Perú.">
+<link rel="stylesheet" href="estilos/estiloS.css">
+</head>
+<body>
+
+<canvas id="fondo-animado"></canvas>
+<div class="velo-fondo"></div>
+
+<header class="encabezado">
+  <div class="envoltura">
+    <a href="index.html" class="marca"><span class="punto"></span>VoxRuta</a>
+    <nav class="nav-principal" id="nav-principal">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="ubicacion.html" class="activo">Ubicación</a>
+      <a href="contactos.html">Contacto</a>
+      <a href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" class="btn-wsp-nav" target="_blank" rel="noopener">Escríbenos</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="encabezado-pagina">
+    <div class="envoltura">
+      <div class="miga">Inicio <span class="ambar">/</span> Ubicación</div>
+      <h1>Dónde estamos</h1>
+      <p>Recojo en tienda en Callao, o coordinamos la entrega directamente por WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="envoltura">
+      <div class="grilla-contacto">
+
+        <div class="panel-contacto">
+          <h3>Dirección</h3>
+
+          <div class="dato-contacto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="etiqueta">Dirección</div>
+              <div class="valor">J3, Callao 07026, Perú</div>
+            </div>
+          </div>
+
+          <div class="dato-contacto">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="etiqueta">Atención</div>
+              <div class="valor">Coordina tu recojo o entrega por WhatsApp</div>
+            </div>
+          </div>
+
+          <a href="https://maps.app.goo.gl/uAqUVPHSF6mNGJoc6" target="_blank" rel="noopener" class="btn-primario" style="margin-top:24px; width:100%; justify-content:center;">
+            Abrir en Google Maps
+          </a>
+          <a href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20coordinar%20el%20recojo%20o%20entrega%20de%20mi%20pedido" target="_blank" rel="noopener" class="btn-secundario" style="margin-top:12px; width:100%; justify-content:center;">
+            Coordinar por WhatsApp
+          </a>
+        </div>
+
+        <div class="panel-contacto" style="padding:0; overflow:hidden;">
+          <iframe
+            class="mapa-embed"
+            src="https://maps.google.com/maps?q=J3%2C%20Callao%2007026%2C%20Peru&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de ubicación VoxRuta">
+          </iframe>
+        </div>
+
+      </div>
+
+      <p style="margin-top:20px; font-size:13px; color:var(--gris-400)">Si el mapa no carga en tu navegador, usa el botón "Abrir en Google Maps" para ver la ubicación exacta.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <div>
+      <div class="pie-marca">VoxRuta</div>
+      <p class="pie-copy">Intercomunicadores para casco de moto — Callao, Perú.</p>
+    </div>
+    <nav class="pie-links">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wsp-flotante" href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script src="estilos/fondo.js"></script>
+<script>
+  const btnMenu = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-principal');
+  btnMenu.addEventListener('click', () => {
+    const abierto = nav.classList.toggle('abierto');
+    btnMenu.setAttribute('aria-expanded', abierto);
+  });
+</script>
+
+</body>
+</html>

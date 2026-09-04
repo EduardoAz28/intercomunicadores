@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoxRuta — Intercomunicadores para casco de moto</title>
+<meta name="description" content="Intercomunicadores Bluetooth para casco de moto en Callao. Modelos Y20 Max, Y12 Pro y Y12. Pide directo por WhatsApp.">
+<link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+<canvas id="fondo-animado"></canvas>
+<div class="velo-fondo"></div>
+
+<header class="encabezado">
+  <div class="envoltura">
+    <a href="index.html" class="marca"><span class="punto"></span>VoxRuta</a>
+    <nav class="nav-principal" id="nav-principal">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" class="btn-wsp-nav" target="_blank" rel="noopener">Escríbenos</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="imagenes/hero-poster.jpg">
+      <source src="imagenes/hero-moto.mp4.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay" aria-hidden="true"></div>
+    <div class="envoltura">
+      <div>
+        <div class="hero-etiqueta"><span class="barra"></span>INTERCOMUNICADORES PARA MOTO</div>
+        <h1>Habla claro con<br>tu grupo <span>en cada ruta</span>.</h1>
+        <p class="intro">Intercomunicadores Bluetooth para casco de moto: conecta con tu copiloto, tu grupo de rodada o tu equipo de reparto sin soltar el manubrio.</p>
+        <div class="fila-botones">
+          <a href="productos.html" class="btn-primario">Ver productos</a>
+          <a href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" class="btn-secundario" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="radar-wrap" aria-hidden="true">
+        <div class="radar-anillo a1"></div>
+        <div class="radar-anillo a2"></div>
+        <div class="radar-anillo a3"></div>
+        <div class="radar-pulso"></div>
+        <div class="radar-centro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 3a5 5 0 0 0-5 5v4a5 5 0 0 0 10 0V8a5 5 0 0 0-5-5Z" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 11v1a7 7 0 0 1-14 0v-1M12 19v3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="franja">
+    <div class="envoltura">
+      <div class="franja-item"><strong>3</strong>modelos disponibles</div>
+      <div class="franja-item"><strong>Callao</strong>entrega y recojo en tienda</div>
+      <div class="franja-item"><strong>WhatsApp</strong>respuesta directa y rápida</div>
+    </div>
+  </section>
+
+  <section class="seccion" id="modelos">
+    <div class="envoltura">
+      <div class="seccion-cabecera">
+        <h2>Elige tu modelo</h2>
+        <p>Tres opciones según cuánto alcance y autonomía necesitas en tu ruta.</p>
+      </div>
+
+      <div class="grilla-productos">
+
+        <a class="tarjeta-producto tarjeta-simple" href="productos.html">
+          <span class="modelo-num">MODELO 01</span>
+          <div class="foto-producto"><img src="imagenes/y20 max.jpg" alt="Intercomunicador Y20 Max" loading="lazy"></div>
+          <span class="destacado">MÁS ALCANCE</span>
+          <h3>Y20 Max</h3>
+        </a>
+
+        <a class="tarjeta-producto tarjeta-simple" href="productos.html">
+          <span class="modelo-num">MODELO 02</span>
+          <div class="foto-producto"><img src="imagenes/y12 pro.avif" alt="Intercomunicador Y12 Pro" loading="lazy"></div>
+          <span class="destacado">MÁS ELEGIDO</span>
+          <h3>Y12 Pro</h3>
+        </a>
+
+        <a class="tarjeta-producto tarjeta-simple" href="productos.html">
+          <span class="modelo-num">MODELO 03</span>
+          <div class="foto-producto"><img src="imagenes/y12.avif" alt="Intercomunicador Y12" loading="lazy"></div>
+          <span class="destacado">PRECIO ACCESIBLE</span>
+          <h3>Y12</h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" style="padding-top:0">
+    <div class="envoltura">
+      <div class="seccion-cabecera">
+        <h2>Por qué elegir VoxRuta</h2>
+        <p>Un emprendimiento nuevo, enfocado en atención directa y rápida.</p>
+      </div>
+      <div class="grilla-beneficios">
+        <div class="beneficio">
+          <span class="num">01</span>
+          <h4>Atención directa</h4>
+          <p>Escríbenos por WhatsApp y te respondemos nosotros mismos, sin intermediarios.</p>
+        </div>
+        <div class="beneficio">
+          <span class="num">02</span>
+          <h4>Precios claros</h4>
+          <p>Un precio fijo por modelo, sin sorpresas ni letras pequeñas.</p>
+        </div>
+        <div class="beneficio">
+          <span class="num">03</span>
+          <h4>Entrega en Callao</h4>
+          <p>Recojo en tienda o coordinamos la entrega contigo directamente.</p>
+        </div>
+        <div class="beneficio">
+          <span class="num">04</span>
+          <h4>Asesoría real</h4>
+          <p>Te ayudamos a elegir el modelo según tu uso: ciudad, rodadas o trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner-wsp">
+    <div class="envoltura">
+      <div>
+        <h3>¿Tienes dudas sobre qué modelo elegir?</h3>
+        <p>Cuéntanos cómo usas tu moto y te recomendamos el intercomunicador ideal.</p>
+      </div>
+      <a href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20tengo%20una%20consulta%20sobre%20los%20intercomunicadores" class="btn-primario" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltura">
+    <div>
+      <div class="pie-marca">VoxRuta</div>
+      <p class="pie-copy">Intercomunicadores para casco de moto — Callao, Perú.</p>
+    </div>
+    <nav class="pie-links">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="caracteristicas.html">Características</a>
+      <a href="ubicacion.html">Ubicación</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="wsp-flotante" href="https://wa.me/51930140078?text=Hola%20VoxRuta%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script src="estilos/fondo.js"></script>
+<script>
+  const btnMenu = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-principal');
+  btnMenu.addEventListener('click', () => {
+    const abierto = nav.classList.toggle('abierto');
+    btnMenu.setAttribute('aria-expanded', abierto);
+  });
+</script>
+
+</body>
+</html>
