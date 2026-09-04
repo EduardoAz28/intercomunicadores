@@ -1,361 +1,1152 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Características técnicas — Konecta2</title>
-<meta name="description" content="Compara las características técnicas de los intercomunicadores Konecta2: Y12, Y12 Pro y Y20 Max.">
-<link rel="stylesheet" href="estilos/estilos.css">
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Características técnicas — Konecta2</title>
+
+  <meta
+    name="description"
+    content="Compara las características técnicas de los intercomunicadores Konecta2: Y12, Y12 Pro y Y20 Max."
+  >
+
+  <link
+    rel="stylesheet"
+    href="estilos/estilos.css"
+  >
+
 </head>
+
 <body>
 
-<canvas id="fondo-animado"></canvas>
-<div class="velo-fondo"></div>
+  <!-- =====================================================
+       VIDEO DE FONDO GLOBAL
+       ===================================================== -->
 
-<header class="encabezado">
-  <div class="envoltura">
-    <a href="index.html" class="marca"><span class="punto"></span>Konecta2</a>
-    <nav class="nav-principal" id="nav-principal">
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="caracteristicas.html" class="activo">Características</a>
-      <a href="ubicacion.html">Ubicación</a>
-      <a href="contactos.html">Contacto</a>
-      <a href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" class="btn-wsp-nav" target="_blank" rel="noopener">Escríbenos</a>
-    </nav>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
+  <video
+    id="video-fondo"
+    class="video-fondo"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="imagenes/hero-poster.jpg"
+    aria-hidden="true"
+  >
+    <source
+      src="imagenes/hero-moto.mp4.mp4"
+      type="video/mp4"
+    >
+  </video>
 
-<main>
 
-  <section class="encabezado-pagina">
+  <!-- =====================================================
+       CANVAS ANIMADO
+       ===================================================== -->
+
+  <canvas id="fondo-animado"></canvas>
+
+
+  <!-- =====================================================
+       VELO OSCURO
+       ===================================================== -->
+
+  <div class="velo-fondo"></div>
+
+
+  <!-- =====================================================
+       ENCABEZADO
+       ===================================================== -->
+
+  <header class="encabezado">
+
     <div class="envoltura">
-      <div class="miga">Inicio <span class="ambar">/</span> Características</div>
-      <h1>Ficha técnica comparativa</h1>
-      <p>Compara a detalle el Y12, el Y12 Pro y el Y20 Max para elegir el modelo que mejor se ajusta a tu uso.</p>
+
+      <a
+        href="index.html"
+        class="marca"
+      >
+        <span class="punto"></span>
+        Konecta2
+      </a>
+
+
+      <nav
+        class="nav-principal"
+        id="nav-principal"
+      >
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="productos.html">
+          Productos
+        </a>
+
+        <a
+          href="caracteristicas.html"
+          class="activo"
+        >
+          Características
+        </a>
+
+        <a href="ubicacion.html">
+          Ubicación
+        </a>
+
+        <a href="contacto.html">
+          Contacto
+        </a>
+
+        <a
+          href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores"
+          class="btn-wsp-nav"
+          target="_blank"
+          rel="noopener"
+        >
+          Escríbenos
+        </a>
+
+      </nav>
+
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
-  </section>
 
-  <section class="seccion">
-    <div class="envoltura">
+  </header>
 
-      <div class="tabla-envoltorio">
-        <table class="tabla-caracteristicas">
-          <thead>
-            <tr>
-              <th class="col-caracteristica">Característica</th>
-              <th class="col-modelo modelo-y12">
-                <span class="badge-modelo">Estándar</span>
-                Y12
-                <span class="precio-col">S/ 50</span>
-              </th>
-              <th class="col-modelo modelo-y12pro">
-                <span class="badge-modelo badge-ambar">Más elegido</span>
-                Y12 Pro
-                <span class="precio-col">S/ 70</span>
-              </th>
-              <th class="col-modelo modelo-y20max">
-                <span class="badge-modelo badge-onda">Más alcance</span>
-                Y20 Max
-                <span class="precio-col">S/ 80</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="col-caracteristica">Tipo de dispositivo</td>
-              <td>Auricular / Manos libres individual</td>
-              <td>Intercomunicador activo</td>
-              <td>Intercomunicador activo</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Conexión entre cascos</td>
-              <td class="valor-no"><span class="icono-valor">✕</span>No permite (solo audio individual)</td>
-              <td class="valor-si"><span class="icono-valor">✓</span>Sí (permite hablar con otro casco)</td>
-              <td class="valor-si"><span class="icono-valor">✓</span>Sí (permite hablar con otro casco)</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Distancia de alcance</td>
-              <td>0 metros (limitado a tu celular)</td>
-              <td>Hasta 500 metros</td>
-              <td>Hasta 300 metros</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Versión de Bluetooth</td>
-              <td>Bluetooth 5.0 / 5.2</td>
-              <td>Bluetooth 5.4</td>
-              <td>Bluetooth 5.3</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Conexión de celulares</td>
-              <td>1 teléfono celular</td>
-              <td>1 teléfono celular</td>
-              <td>Doble (2 celulares a la vez)</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Funciones de audio</td>
-              <td>Escuchar música, llamadas y GPS</td>
-              <td>Audio mixto (música + hablar a la vez)</td>
-              <td>Escuchar música, llamadas y GPS</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Iluminación estética</td>
-              <td>Sin luces llamativas</td>
-              <td>RGB básico</td>
-              <td>RGB con 16 efectos dinámicos</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Cancelación de ruido</td>
-              <td>Básica</td>
-              <td>Avanzada (CVC + DSP)</td>
-              <td>Estándar (DSP)</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Puerto de carga</td>
-              <td>Micro-USB o Tipo C (según lote)</td>
-              <td>USB Tipo C</td>
-              <td>USB Tipo C</td>
-            </tr>
-            <tr>
-              <td class="col-caracteristica">Protección al agua</td>
-              <td>IPX6 (resistente a lluvia)</td>
-              <td>IPX6 (resistente a lluvia)</td>
-              <td>IPX6 (resistente a lluvia)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
-      <p style="margin-top:20px; font-size:13px; color:var(--gris-400)">Las especificaciones pueden variar ligeramente según el lote recibido. Ante cualquier duda puntual, confírmala directo por WhatsApp antes de tu compra.</p>
+  <!-- =====================================================
+       CONTENIDO PRINCIPAL
+       ===================================================== -->
 
-      <div class="grilla-productos" style="margin-top:44px;">
+  <main>
 
-        <article class="tarjeta-producto">
-          <span class="modelo-num">MODELO 03</span>
-          <span class="destacado">PRECIO ACCESIBLE</span>
-          <h3>Y12</h3>
-          <p class="desc">Ideal si solo necesitas manos libres para llamadas, música y GPS, sin hablar con otro casco.</p>
-          <div class="precio-fila">
-            <span class="precio">S/ 50</span>
-            <small>precio único</small>
-          </div>
-          <a href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20cotizar%20el%20Y12%20(S%2F%2050)" class="btn-comprar" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
-            Pedir por WhatsApp
-          </a>
-        </article>
 
-        <article class="tarjeta-producto">
-          <span class="modelo-num">MODELO 02</span>
-          <span class="destacado">MÁS ELEGIDO</span>
-          <h3>Y12 Pro</h3>
-          <p class="desc">La mejor cancelación de ruido del catálogo y audio mixto para hablar y escuchar música a la vez.</p>
-          <div class="precio-fila">
-            <span class="precio">S/ 70</span>
-            <small>precio único</small>
-          </div>
-          <a href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20cotizar%20el%20Y12%20Pro%20(S%2F%2070)" class="btn-comprar" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
-            Pedir por WhatsApp
-          </a>
-        </article>
+    <!-- ===================================================
+         ENCABEZADO DE PÁGINA
+         =================================================== -->
 
-        <article class="tarjeta-producto">
-          <span class="modelo-num">MODELO 01</span>
-          <span class="destacado">MÁS ALCANCE</span>
-          <h3>Y20 Max</h3>
-          <p class="desc">Doble conexión de celulares y hasta 500 metros de alcance entre cascos, con iluminación RGB completa.</p>
-          <div class="precio-fila">
-            <span class="precio">S/ 80</span>
-            <small>precio único</small>
-          </div>
-          <a href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20cotizar%20el%20Y20%20Max%20(S%2F%2080)" class="btn-comprar" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
-            Pedir por WhatsApp
-          </a>
-        </article>
+    <section class="encabezado-pagina">
+
+      <div class="envoltura">
+
+        <div class="miga">
+          Inicio
+          <span class="ambar">/</span>
+          Características
+        </div>
+
+        <h1>
+          Ficha técnica comparativa
+        </h1>
+
+        <p>
+          Compara a detalle el Y12, el Y12 Pro y el Y20 Max
+          para elegir el modelo que mejor se ajusta a tu uso.
+        </p>
 
       </div>
 
-    </div>
-  </section>
+    </section>
 
-  <section class="banner-wsp">
+
+    <!-- ===================================================
+         TABLA COMPARATIVA
+         =================================================== -->
+
+    <section class="seccion">
+
+      <div class="envoltura">
+
+
+        <div class="tabla-envoltorio">
+
+          <table class="tabla-caracteristicas">
+
+            <thead>
+
+              <tr>
+
+                <th class="col-caracteristica">
+                  Característica
+                </th>
+
+
+                <th class="col-modelo modelo-y12">
+
+                  <span class="badge-modelo">
+                    Estándar
+                  </span>
+
+                  Y12
+
+                  <span class="precio-col">
+                    S/ 50
+                  </span>
+
+                </th>
+
+
+                <th class="col-modelo modelo-y12pro">
+
+                  <span class="badge-modelo badge-ambar">
+                    Más elegido
+                  </span>
+
+                  Y12 Pro
+
+                  <span class="precio-col">
+                    S/ 70
+                  </span>
+
+                </th>
+
+
+                <th class="col-modelo modelo-y20max">
+
+                  <span class="badge-modelo badge-onda">
+                    Más alcance
+                  </span>
+
+                  Y20 Max
+
+                  <span class="precio-col">
+                    S/ 80
+                  </span>
+
+                </th>
+
+              </tr>
+
+            </thead>
+
+
+            <tbody>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Tipo de dispositivo
+                </td>
+
+                <td>
+                  Auricular / Manos libres individual
+                </td>
+
+                <td>
+                  Intercomunicador activo
+                </td>
+
+                <td>
+                  Intercomunicador activo
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Conexión entre cascos
+                </td>
+
+                <td class="valor-no">
+
+                  <span class="icono-valor">
+                    ✕
+                  </span>
+
+                  No permite (solo audio individual)
+
+                </td>
+
+                <td class="valor-si">
+
+                  <span class="icono-valor">
+                    ✓
+                  </span>
+
+                  Sí (permite hablar con otro casco)
+
+                </td>
+
+                <td class="valor-si">
+
+                  <span class="icono-valor">
+                    ✓
+                  </span>
+
+                  Sí (permite hablar con otro casco)
+
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Distancia de alcance
+                </td>
+
+                <td>
+                  0 metros (limitado a tu celular)
+                </td>
+
+                <td>
+                  Hasta 500 metros
+                </td>
+
+                <td>
+                  Hasta 300 metros
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Versión de Bluetooth
+                </td>
+
+                <td>
+                  Bluetooth 5.0 / 5.2
+                </td>
+
+                <td>
+                  Bluetooth 5.4
+                </td>
+
+                <td>
+                  Bluetooth 5.3
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Conexión de celulares
+                </td>
+
+                <td>
+                  1 teléfono celular
+                </td>
+
+                <td>
+                  1 teléfono celular
+                </td>
+
+                <td>
+                  Doble (2 celulares a la vez)
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Funciones de audio
+                </td>
+
+                <td>
+                  Escuchar música, llamadas y GPS
+                </td>
+
+                <td>
+                  Audio mixto (música + hablar a la vez)
+                </td>
+
+                <td>
+                  Escuchar música, llamadas y GPS
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Iluminación estética
+                </td>
+
+                <td>
+                  Sin luces llamativas
+                </td>
+
+                <td>
+                  RGB básico
+                </td>
+
+                <td>
+                  RGB con 16 efectos dinámicos
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Cancelación de ruido
+                </td>
+
+                <td>
+                  Básica
+                </td>
+
+                <td>
+                  Avanzada (CVC + DSP)
+                </td>
+
+                <td>
+                  Estándar (DSP)
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Puerto de carga
+                </td>
+
+                <td>
+                  Micro-USB o Tipo C (según lote)
+                </td>
+
+                <td>
+                  USB Tipo C
+                </td>
+
+                <td>
+                  USB Tipo C
+                </td>
+
+              </tr>
+
+
+              <tr>
+
+                <td class="col-caracteristica">
+                  Protección al agua
+                </td>
+
+                <td>
+                  IPX6 (resistente a lluvia)
+                </td>
+
+                <td>
+                  IPX6 (resistente a lluvia)
+                </td>
+
+                <td>
+                  IPX6 (resistente a lluvia)
+                </td>
+
+              </tr>
+
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <!-- =================================================
+             NOTA
+             ================================================= -->
+
+        <p
+          style="
+            margin-top:20px;
+            font-size:13px;
+            color:var(--gris-400);
+          "
+        >
+          Las especificaciones pueden variar ligeramente según
+          el lote recibido. Ante cualquier duda puntual,
+          confírmala directo por WhatsApp antes de tu compra.
+        </p>
+
+
+        <!-- =================================================
+             PRODUCTOS
+             ================================================= -->
+
+        <div
+          class="grilla-productos"
+          style="margin-top:44px;"
+        >
+
+
+          <!-- ===============================================
+               Y12
+               =============================================== -->
+
+          <article class="tarjeta-producto">
+
+            <span class="modelo-num">
+              MODELO 03
+            </span>
+
+            <span class="destacado">
+              PRECIO ACCESIBLE
+            </span>
+
+            <h3>
+              Y12
+            </h3>
+
+            <p class="desc">
+              Ideal si solo necesitas manos libres para
+              llamadas, música y GPS, sin hablar con otro casco.
+            </p>
+
+            <div class="precio-fila">
+
+              <span class="precio">
+                S/ 50
+              </span>
+
+              <small>
+                precio único
+              </small>
+
+            </div>
+
+
+            <a
+              href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20cotizar%20el%20Y12%20(S%2F%2050)"
+              class="btn-comprar"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/>
+
+                <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/>
+              </svg>
+
+              Pedir por WhatsApp
+
+            </a>
+
+          </article>
+
+
+          <!-- ===============================================
+               Y12 PRO
+               =============================================== -->
+
+          <article class="tarjeta-producto">
+
+            <span class="modelo-num">
+              MODELO 02
+            </span>
+
+            <span class="destacado">
+              MÁS ELEGIDO
+            </span>
+
+            <h3>
+              Y12 Pro
+            </h3>
+
+            <p class="desc">
+              La mejor cancelación de ruido del catálogo y
+              audio mixto para hablar y escuchar música a la vez.
+            </p>
+
+            <div class="precio-fila">
+
+              <span class="precio">
+                S/ 70
+              </span>
+
+              <small>
+                precio único
+              </small>
+
+            </div>
+
+
+            <a
+              href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20cotizar%20el%20Y12%20Pro%20(S%2F%2070)"
+              class="btn-comprar"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+
+                <path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/>
+
+                <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/>
+
+              </svg>
+
+              Pedir por WhatsApp
+
+            </a>
+
+          </article>
+
+
+          <!-- ===============================================
+               Y20 MAX
+               =============================================== -->
+
+          <article class="tarjeta-producto">
+
+            <span class="modelo-num">
+              MODELO 01
+            </span>
+
+            <span class="destacado">
+              MÁS ALCANCE
+            </span>
+
+            <h3>
+              Y20 Max
+            </h3>
+
+            <p class="desc">
+              Doble conexión de celulares y hasta 500 metros
+              de alcance entre cascos, con iluminación RGB completa.
+            </p>
+
+            <div class="precio-fila">
+
+              <span class="precio">
+                S/ 80
+              </span>
+
+              <small>
+                precio único
+              </small>
+
+            </div>
+
+
+            <a
+              href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20cotizar%20el%20Y20%20Max%20(S%2F%2080)"
+              class="btn-comprar"
+              target="_blank"
+              rel="noopener"
+            >
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+
+                <path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/>
+
+                <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/>
+
+              </svg>
+
+              Pedir por WhatsApp
+
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         BANNER WHATSAPP
+         =================================================== -->
+
+    <section class="banner-wsp">
+
+      <div class="envoltura">
+
+        <div>
+
+          <h3>
+            ¿Todavía tienes dudas técnicas?
+          </h3>
+
+          <p>
+            Escríbenos y te ayudamos a comparar según tu tipo de uso.
+          </p>
+
+        </div>
+
+
+        <a
+          href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20tengo%20una%20duda%20t%C3%A9cnica%20sobre%20los%20modelos"
+          class="btn-primario"
+          target="_blank"
+          rel="noopener"
+        >
+          Escribir por WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       PIE DE PÁGINA
+       ===================================================== -->
+
+  <footer class="pie">
+
     <div class="envoltura">
+
       <div>
-        <h3>¿Todavía tienes dudas técnicas?</h3>
-        <p>Escríbenos y te ayudamos a comparar según tu tipo de uso.</p>
+
+        <div class="pie-marca">
+          Konecta2
+        </div>
+
+        <p class="pie-copy">
+          Intercomunicadores para casco de moto — Callao, Perú.
+        </p>
+
       </div>
-      <a href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20tengo%20una%20duda%20t%C3%A9cnica%20sobre%20los%20modelos" class="btn-primario" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+
+
+      <nav class="pie-links">
+
+        <a href="index.html">
+          Inicio
+        </a>
+
+        <a href="productos.html">
+          Productos
+        </a>
+
+        <a href="caracteristicas.html">
+          Características
+        </a>
+
+        <a href="ubicacion.html">
+          Ubicación
+        </a>
+
+        <a href="contacto.html">
+          Contacto
+        </a>
+
+      </nav>
+
     </div>
-  </section>
 
-</main>
+  </footer>
 
-<footer class="pie">
-  <div class="envoltura">
-    <div>
-      <div class="pie-marca">Konecta2</div>
-      <p class="pie-copy">Intercomunicadores para casco de moto — Callao, Perú.</p>
-    </div>
-    <nav class="pie-links">
-      <a href="index.html">Inicio</a>
-      <a href="productos.html">Productos</a>
-      <a href="caracteristicas.html">Características</a>
-      <a href="ubicacion.html">Ubicación</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</footer>
 
-<a class="wsp-flotante" href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
-</a>
+  <!-- =====================================================
+       WHATSAPP FLOTANTE
+       ===================================================== -->
 
-<style>
-  .tabla-envoltorio{
-    overflow-x:auto;
-    border:1px solid var(--linea-500);
-    border-radius:6px;
-    background:rgba(27,31,38,0.82);
-    -webkit-overflow-scrolling:touch;
-  }
+  <a
+    class="wsp-flotante"
+    href="https://wa.me/51930140078?text=Hola%20Konecta2%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20intercomunicadores"
+    target="_blank"
+    rel="noopener"
+    aria-label="Escribir por WhatsApp"
+  >
 
-  .tabla-caracteristicas{
-    width:100%;
-    border-collapse:collapse;
-    min-width:720px;
-    font-size:14.5px;
-  }
+    <svg
+      viewBox="0 0 24 24"
+      fill="#fff"
+    >
 
-  .tabla-caracteristicas thead th{
-    text-align:left;
-    padding:24px 18px 20px;
-    background:var(--asfalto-800);
-    border-bottom:1px solid var(--linea-500);
-    vertical-align:top;
-  }
+      <path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/>
 
-  .tabla-caracteristicas th.col-caracteristica{
-    color:var(--gris-400);
-    font-family:var(--fuente-texto);
-    font-size:12px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    vertical-align:bottom;
-  }
+      <path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/>
 
-  .col-modelo{
-    font-family:var(--fuente-display);
-    font-weight:800;
-    font-size:24px;
-    letter-spacing:0.3px;
-  }
+    </svg>
 
-  .modelo-y12{ color:var(--crema-100); }
-  .modelo-y12pro{ color:var(--ambar-500); }
-  .modelo-y20max{ color:var(--onda-500); }
+  </a>
 
-  .badge-modelo{
-    display:block;
-    width:fit-content;
-    font-family:var(--fuente-texto);
-    font-size:11px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:0.5px;
-    color:var(--gris-400);
-    border:1px solid var(--linea-500);
-    padding:3px 9px;
-    border-radius:3px;
-    margin-bottom:10px;
-  }
 
-  .badge-modelo.badge-ambar{
-    color:var(--ambar-500);
-    border-color:rgba(255,122,41,0.4);
-  }
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
 
-  .badge-modelo.badge-onda{
-    color:var(--onda-500);
-    border-color:rgba(63,193,255,0.4);
-  }
+  <script src="fondo.js"></script>
 
-  .precio-col{
-    display:block;
-    font-family:var(--fuente-texto);
-    font-size:13px;
-    font-weight:500;
-    color:var(--gris-400);
-    margin-top:6px;
-    letter-spacing:0;
-  }
 
-  .tabla-caracteristicas td{
-    padding:15px 18px;
-    border-bottom:1px solid var(--linea-500);
-    color:var(--crema-100);
-    vertical-align:middle;
-    font-size:14px;
-  }
+  <script>
 
-  .tabla-caracteristicas td.col-caracteristica{
-    color:var(--gris-300);
-    font-weight:600;
-    white-space:nowrap;
-  }
+    const btnMenu =
+      document.getElementById('menu-toggle');
 
-  .tabla-caracteristicas tbody tr:hover td{
-    background:rgba(255,255,255,0.025);
-  }
+    const nav =
+      document.getElementById('nav-principal');
 
-  .tabla-caracteristicas tbody tr:last-child td{
-    border-bottom:none;
-  }
 
-  .valor-no{ color:var(--gris-400); }
-  .valor-si{ color:var(--onda-500); font-weight:600; }
+    if (btnMenu && nav) {
 
-  .icono-valor{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:18px; height:18px;
-    border-radius:50%;
-    font-size:11px;
-    margin-right:8px;
-    vertical-align:-3px;
-  }
+      btnMenu.addEventListener(
+        'click',
+        () => {
 
-  .valor-no .icono-valor{
-    background:rgba(154,161,172,0.12);
-    color:var(--gris-400);
-  }
+          const abierto =
+            nav.classList.toggle('abierto');
 
-  .valor-si .icono-valor{
-    background:rgba(63,193,255,0.14);
-    color:var(--onda-500);
-  }
+          btnMenu.setAttribute(
+            'aria-expanded',
+            abierto
+          );
 
-  @media (max-width: 640px){
-    .tabla-caracteristicas{ font-size:13.5px; }
-    .col-modelo{ font-size:19px; }
-  }
-</style>
+        }
+      );
 
-<script src="estilos/fondo.js"></script>
-<script>
-  const btnMenu = document.getElementById('menu-toggle');
-  const nav = document.getElementById('nav-principal');
-  btnMenu.addEventListener('click', () => {
-    const abierto = nav.classList.toggle('abierto');
-    btnMenu.setAttribute('aria-expanded', abierto);
-  });
-</script>
+    }
+
+  </script>
+
+
+  <!-- =====================================================
+       ESTILOS EXCLUSIVOS DE LA TABLA
+       ===================================================== -->
+
+  <style>
+
+    .tabla-envoltorio{
+
+      overflow-x:auto;
+
+      border:
+        1px solid
+        var(--linea-500);
+
+      border-radius:6px;
+
+      background:
+        rgba(27,31,38,0.82);
+
+      -webkit-overflow-scrolling:touch;
+
+    }
+
+
+    .tabla-caracteristicas{
+
+      width:100%;
+
+      border-collapse:collapse;
+
+      min-width:720px;
+
+      font-size:14.5px;
+
+    }
+
+
+    .tabla-caracteristicas thead th{
+
+      text-align:left;
+
+      padding:24px 18px 20px;
+
+      background:
+        rgba(27,31,38,0.92);
+
+      border-bottom:
+        1px solid
+        var(--linea-500);
+
+      vertical-align:top;
+
+    }
+
+
+    .tabla-caracteristicas
+    th.col-caracteristica{
+
+      color:var(--gris-400);
+
+      font-family:var(--fuente-texto);
+
+      font-size:12px;
+
+      font-weight:600;
+
+      text-transform:uppercase;
+
+      letter-spacing:1px;
+
+      vertical-align:bottom;
+
+    }
+
+
+    .col-modelo{
+
+      font-family:var(--fuente-display);
+
+      font-weight:800;
+
+      font-size:24px;
+
+      letter-spacing:0.3px;
+
+    }
+
+
+    .modelo-y12{
+
+      color:var(--crema-100);
+
+    }
+
+
+    .modelo-y12pro{
+
+      color:var(--ambar-500);
+
+    }
+
+
+    .modelo-y20max{
+
+      color:var(--onda-500);
+
+    }
+
+
+    .badge-modelo{
+
+      display:block;
+
+      width:fit-content;
+
+      font-family:var(--fuente-texto);
+
+      font-size:11px;
+
+      font-weight:700;
+
+      text-transform:uppercase;
+
+      letter-spacing:0.5px;
+
+      color:var(--gris-400);
+
+      border:
+        1px solid
+        var(--linea-500);
+
+      padding:3px 9px;
+
+      border-radius:3px;
+
+      margin-bottom:10px;
+
+    }
+
+
+    .badge-modelo.badge-ambar{
+
+      color:var(--ambar-500);
+
+      border-color:
+        rgba(255,122,41,0.4);
+
+    }
+
+
+    .badge-modelo.badge-onda{
+
+      color:var(--onda-500);
+
+      border-color:
+        rgba(63,193,255,0.4);
+
+    }
+
+
+    .precio-col{
+
+      display:block;
+
+      font-family:var(--fuente-texto);
+
+      font-size:13px;
+
+      font-weight:500;
+
+      color:var(--gris-400);
+
+      margin-top:6px;
+
+      letter-spacing:0;
+
+    }
+
+
+    .tabla-caracteristicas td{
+
+      padding:15px 18px;
+
+      border-bottom:
+        1px solid
+        var(--linea-500);
+
+      color:var(--crema-100);
+
+      vertical-align:middle;
+
+      font-size:14px;
+
+    }
+
+
+    .tabla-caracteristicas
+    td.col-caracteristica{
+
+      color:var(--gris-300);
+
+      font-weight:600;
+
+      white-space:nowrap;
+
+    }
+
+
+    .tabla-caracteristicas
+    tbody tr:hover td{
+
+      background:
+        rgba(255,255,255,0.025);
+
+    }
+
+
+    .tabla-caracteristicas
+    tbody tr:last-child td{
+
+      border-bottom:none;
+
+    }
+
+
+    .valor-no{
+
+      color:var(--gris-400);
+
+    }
+
+
+    .valor-si{
+
+      color:var(--onda-500);
+
+      font-weight:600;
+
+    }
+
+
+    .icono-valor{
+
+      display:inline-flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      width:18px;
+
+      height:18px;
+
+      border-radius:50%;
+
+      font-size:11px;
+
+      margin-right:8px;
+
+      vertical-align:-3px;
+
+    }
+
+
+    .valor-no .icono-valor{
+
+      background:
+        rgba(154,161,172,0.12);
+
+      color:var(--gris-400);
+
+    }
+
+
+    .valor-si .icono-valor{
+
+      background:
+        rgba(63,193,255,0.14);
+
+      color:var(--onda-500);
+
+    }
+
+
+    @media (max-width:640px){
+
+      .tabla-caracteristicas{
+
+        font-size:13.5px;
+
+      }
+
+
+      .col-modelo{
+
+        font-size:19px;
+
+      }
+
+    }
+
+  </style>
 
 </body>
+
 </html>
